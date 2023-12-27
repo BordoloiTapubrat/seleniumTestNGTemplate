@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite parallel="tests" name="Suite">
+<listeners>
+<listener class-name="com.implement.listeners.ListernerImplementation"></listener>
+</listeners>
+  <test thread-count="5" parallel="tests" name="Example_Listener_Interface">
+    <classes>
+      <class name="testNg.doc.ExampleListeners_Interface"/>
+    </classes>
+  </test> <!-- Example_Listener_Interface -->
+</suite> <!-- Suite -->

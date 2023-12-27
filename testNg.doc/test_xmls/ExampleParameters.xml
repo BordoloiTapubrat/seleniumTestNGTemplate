@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite parallel="tests" name="Suite">
+  <test thread-count="5" parallel="tests" name="ExampleParameters">
+  <parameter name="userName" value="Tony"></parameter>
+  <parameter name="password" value="Stark"></parameter>
+  <parameter name="uName" value="Monkey"></parameter>
+  <parameter name="pword" value="King"></parameter>
+  <classes>
+  <class name = "testNg.doc.ExampleParameters"></class>
+  </classes>
+  </test> <!-- ExampleParameters -->
+</suite> <!-- Suite -->

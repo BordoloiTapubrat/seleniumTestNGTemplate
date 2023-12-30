@@ -1,0 +1,19 @@
+
+[INFO ] 2023-12-30 13:30:42.781 [main] Test_Application_Login - Setup Step
+[INFO ] 2023-12-30 13:30:42.787 [main] Test_Application_Login - Initilizing Chrome WebDriver
+[INFO ] 2023-12-30 13:30:42.791 [main] InitializeDriver - Setting Chrome Driver Binary
+[INFO ] 2023-12-30 13:30:43.152 [main] InitializeDriver - Binary Path - C:\Program Files\Google\Chrome\Application\chrome.exe
+[INFO ] 2023-12-30 13:30:43.152 [main] InitializeDriver - Setting Chrome Options --start-maximized
+[INFO ] 2023-12-30 13:30:43.153 [main] InitializeDriver - Setting ChromeDriver Preferences
+[INFO ] 2023-12-30 13:30:43.153 [main] InitializeDriver - Setting default download directory
+[INFO ] 2023-12-30 13:30:43.153 [main] InitializeDriver - Setting popups to 0
+[INFO ] 2023-12-30 13:30:44.833 [main] Test_Application_Login - Sleep Time 20000
+[INFO ] 2023-12-30 13:30:44.836 [main] Test_Application_Login - Initilizing Actions Class
+[INFO ] 2023-12-30 13:30:44.865 [main] Test_Application_Login - Launching URL - https://opensource-demo.orangehrmlive.com/web/index.php/auth/login
+[INFO ] 2023-12-30 13:30:48.682 [main] Test_Application_Login - Login to Application 
+[INFO ] 2023-12-30 13:30:48.682 [main] Test_Application_Login - UserName Admin
+[INFO ] 2023-12-30 13:30:48.682 [main] Test_Application_Login - Password admin123
+[INFO ] 2023-12-30 13:30:48.683 [main] LoginPage - Type UserName
+[INFO ] 2023-12-30 13:30:49.353 [main] LoginPage - Type Password
+[INFO ] 2023-12-30 13:30:49.496 [main] LoginPage - Clicking on Login Button
+[INFO ] 2023-12-30 13:30:54.812 [main] Test_Application_Login - Quit Execution

@@ -34,7 +34,7 @@ public class SnippetStaticWebTable {
 
 	WebDriver driver;
 	WebDriverWait wait;
-	private static Logger logger = LogManager.getLogger(SnippetDynamicWebTable.class);
+	private static Logger logger = LogManager.getLogger(SnippetStaticWebTable.class);
 
 	@BeforeTest
 	public void setup() {

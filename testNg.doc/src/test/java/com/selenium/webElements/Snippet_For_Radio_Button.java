@@ -2,17 +2,23 @@ package com.selenium.webElements;
 
 import java.io.File;
 import java.time.Duration;
+import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
+import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeDriverService;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.manager.SeleniumManagerOutput;
 import org.openqa.selenium.remote.service.DriverFinder;
+import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
@@ -26,7 +32,7 @@ public class Snippet_For_Radio_Button {
 	WebDriverWait wait;
 	private static Logger logger = LogManager.getLogger(Snippet_For_Radio_Button.class);
 
-	String url = "https://the-internet.herokuapp.com/";
+	String url = "https://ultimateqa.com/simple-html-elements-for-automation/";
 
 	@BeforeTest
 	public void setup() {
@@ -50,11 +56,17 @@ public class Snippet_For_Radio_Button {
 
 	}
 
-	@Test(priority = 1, description = "Description", enabled = true)
+	@Test(priority = 1, description = "Snippet For Radio Button", enabled = true)
 	public void test() throws InterruptedException {
 
 		driver.get(url);
-
+		
+		JavascriptExecutor js = (JavascriptExecutor) driver;
+		js.executeScript("window.scrollBy(0,350)", "");
+		
+		Thread.sleep(3000);
+		driver.findElement(By.xpath("//input[@type='radio' and @value='male']")).click();
+		Thread.sleep(8000);
 	}
 
 	@AfterTest
